@@ -17,7 +17,7 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         int x = 0 , y = 0, sum = 0, carry=0;
         ListNode *head=NULL, **tmp=&head;
-        while(l1 != NULL || l2 != NULL || caryy>0) {
+        while(l1 != NULL || l2 != NULL || carry>0) {
             x = getValueAndNext(l1);
             y = getValueAndNext(l2);
             sum = x + y + carry;
